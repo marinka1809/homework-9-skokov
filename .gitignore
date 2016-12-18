@@ -3,4 +3,3 @@ node_modules
 .bowerrc
 app/libs/
 dist
-img
