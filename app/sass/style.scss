@@ -107,7 +107,7 @@ body {
 
     .main-nav {
       padding-top: 0;
-      > li {
+      > li { /*Зачем тебе везде символ ">" */
         > a {
           font-size: 0.8em;
           line-height: 1em;
@@ -171,7 +171,7 @@ body {
 
 @media screen and (min-width: 1400px) {
   #header {
-    padding: 20px 120px;
+    padding: 20px 120px; /*Таких больших паддингов слева и справа на сайте быть не должно. Разве что в исключительных ситуациях и то с большой осторожностью*/
   }
 }
 
@@ -179,7 +179,7 @@ body {
 .slider-section {
 
   #slider-top {
-    height: 400px;
+    height: 400px;/*??? зачем*/
     overflow: hidden;
 
     .slider-content {
@@ -187,7 +187,7 @@ body {
       >.slide {
         >.bg-img {
           display: block;
-          max-width: 1000px;
+          max-width: 1000px;/*??? зачем*/
           height:100%;
         }
       }
@@ -222,11 +222,11 @@ body {
 
     h2 {
       display: block;
-      //margin-top: 5px;
+      //margin-top: 5px;/*Комментариев не должно быть*/
       margin-bottom: 10px;
       color: #000000;
       font-size: 20px;
-      line-height: 1.2em;
+      line-height: 1.2em;/*Выбирай ибо пиксели либо емы*/
       text-transform: uppercase;
 
       span.new-line {
@@ -313,7 +313,8 @@ body {
 @media screen and (min-width: 768px) {
   .slider-section {
     #slider-top {
-      max-height: calc(100vh - 130px);
+      max-height: 
+        (100vh - 130px);
       height: auto;
 
       .slider-content {
@@ -551,7 +552,8 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) { /*Так у тебя ж уже был такой брейкпоинт, зачем разбивать по разным частям?*/
+  /*Было бы круто разные расширения по разным файлам разбить. Тогда повторов не будет и намного легче искать то, что тебе надо*/
   .content-section {
     padding: 40px 30px;
 
@@ -610,7 +612,7 @@ body {
     .item {
       float: left;
       margin: 0;
-      padding: 2px 2px;
+      padding: 2px 2px; /*1 раз 2рх хватит*/
     }
   }
 }
@@ -619,7 +621,7 @@ body {
 .clients-section {
   .sl {
     margin: 0 40px;
-    margin-bottom: 100px;
+    margin-bottom: 100px;/* а чего в первой строке нельзя было указать? */
 
     .sl_slide {
       padding: 0 40px;
@@ -662,7 +664,7 @@ body {
   .wrapper {
     padding: 0 15px;
   }
-  .footer-col {
+  .footer-col {/*а нельзя было селекторы выше просто перечислить с одинаковыми паддингами? меньше писать же....*/
     padding: 0 15px;
   }
   .footer-section {
@@ -731,7 +733,7 @@ body {
       margin-bottom: 2px;
       text-align: center;
       line-height: 30px;
-      background: #000000;
+      background: #000000; /*background-color пиши.*/
     }
     .fa {
       font-size: 1.3em;
@@ -753,7 +755,7 @@ body {
         margin-right: 20px;
         font-family: FontAwesome;
         font-size: 1.3em;
-        line-height: 30px;
+        line-height: 30px; /* а одной строкой шрифт не пишется? */
         text-align: center;
         background: #000000;
       }
@@ -810,7 +812,7 @@ body {
     background: #000000;
 
     .wrapper {
-      display: flex;
+      display: flex; /*Ух ты. хоть где-то флексбокс*/
       justify-content: space-between;
       align-items: center;
       padding: 20px 15px;
