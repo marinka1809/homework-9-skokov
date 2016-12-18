@@ -36,7 +36,8 @@ gulp.task('scripts', function() {
         'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
         'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js', // Берем Magnific Popup
         'app/libs/bootstrap/dist/js/bootstrap.min.js', // Бутстрап
-        'app/libs/slick/slick.min.js' // Слайдер
+        'app/libs/slick/slick.min.js', // Слайдер
+        'app/libs/masonry.pkgd.min.js' // Masonry
     ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл

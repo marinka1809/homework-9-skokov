@@ -103,6 +103,19 @@ body {
     }
   }
 
+  .collapse.in {
+
+    .main-nav {
+      padding-top: 0;
+      > li {
+        > a {
+          font-size: 0.8em;
+          line-height: 1em;
+        }
+      }
+    }
+  }
+
   .main-nav {
     padding: 20px 0 0;
     >li {
@@ -236,7 +249,7 @@ body {
     }
 
     .col-button {
-      margin-top: 10px;
+      margin: 10px 0 5px;
       text-align: right;
       font-size: 1em;
 
@@ -456,7 +469,8 @@ body {
       position: relative;
       padding: 20px;
       color: #ffffff;
-      font-size: 0.8em/1.3em;
+      font-size: 0.8em;
+      line-height: 1.3em;
       text-align: center;
       background: $light-primary-color;
 
@@ -604,32 +618,36 @@ body {
 //-----------------------CLIENTS-SECTION-----------------
 .clients-section {
   .sl {
-    margin: 0 30px;
+    margin: 0 40px;
     margin-bottom: 100px;
 
     .sl_slide {
-      padding: 0 20px;
+      padding: 0 40px;
     }
   }
 
   .slick-prev,
   .slick-next {
     &:before {
+      margin-top: -40px;
+      display: inline-block;
       font-family: FontAwesome;
-      font-size: 50px;
+      font-size: 40px;
       line-height: 100px;
       color: #FFFFFF;
       background: #000000;
     }
   }
-  .slick-prev {
+  .slick-next {
     &:before {
       content: "\f105";
+      padding: 0 5px 0 10px;
     }
   }
   .slick-prev {
     &:before {
       content: "\f104";
+      padding: 0 10px 0 5px;
     }
   }
 }
@@ -768,6 +786,23 @@ body {
       &:before {
         content: "\f0e0";
       }
+    }
+  }
+  #mc_embed_signup {
+    margin-top: 20px;
+
+    .email {
+      width: 200px;
+      color: #ffffff;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid $second-color;
+    }
+    .button{
+      width: 20px;
+      padding: 0 4px;
+      background: #000000;
+      border: none;
     }
   }
 

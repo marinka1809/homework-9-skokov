@@ -126,6 +126,11 @@ body {
       background: transparent;
       -webkit-box-shadow: 0 0 8px #ffea00;
               box-shadow: 0 0 8px #ffea00; }
+  .nav-wrapper .collapse.in .main-nav {
+    padding-top: 0; }
+    .nav-wrapper .collapse.in .main-nav > li > a {
+      font-size: 0.8em;
+      line-height: 1em; }
   .nav-wrapper .main-nav {
     padding: 20px 0 0; }
     .nav-wrapper .main-nav > li {
@@ -208,7 +213,7 @@ body {
       line-height: 1.4em;
       background: #414146; }
   .slider-section .slider-caption .col-button {
-    margin-top: 10px;
+    margin: 10px 0 5px;
     text-align: right;
     font-size: 1em; }
     .slider-section .slider-caption .col-button .button-link {
@@ -341,7 +346,8 @@ body {
       position: relative;
       padding: 20px;
       color: #ffffff;
-      font-size: 0.8em/1.3em;
+      font-size: 0.8em;
+      line-height: 1.3em;
       text-align: center;
       background: #414146; }
       .content-section li .caption:before {
@@ -444,24 +450,28 @@ body {
     padding: 2px 2px; }
 
 .clients-section .sl {
-  margin: 0 30px;
+  margin: 0 40px;
   margin-bottom: 100px; }
   .clients-section .sl .sl_slide {
-    padding: 0 20px; }
+    padding: 0 40px; }
 
 .clients-section .slick-prev:before,
 .clients-section .slick-next:before {
+  margin-top: -40px;
+  display: inline-block;
   font-family: FontAwesome;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 100px;
   color: #FFFFFF;
   background: #000000; }
 
-.clients-section .slick-prev:before {
-  content: "\f105"; }
+.clients-section .slick-next:before {
+  content: "\f105";
+  padding: 0 5px 0 10px; }
 
 .clients-section .slick-prev:before {
-  content: "\f104"; }
+  content: "\f104";
+  padding: 0 10px 0 5px; }
 
 #footer {
   padding: 20px 0 0 0;
@@ -543,6 +553,19 @@ body {
     margin-bottom: 20px; }
   #footer .contact dt.mail:before {
     content: "\f0e0"; }
+  #footer #mc_embed_signup {
+    margin-top: 20px; }
+    #footer #mc_embed_signup .email {
+      width: 200px;
+      color: #ffffff;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid #ffea00; }
+    #footer #mc_embed_signup .button {
+      width: 20px;
+      padding: 0 4px;
+      background: #000000;
+      border: none; }
   #footer .footer-bootom-block {
     background: #000000; }
     #footer .footer-bootom-block .wrapper {
